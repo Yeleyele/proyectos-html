@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>METODO SPLICE</title>
+
+</head>
+
+<body>
+
+<center>
+    <img src="logo-social.png" alt="" width="150" height="150">
+
+<h1>METODO SPLICE EN ARRAYS</h1>
+
+<h2>BUSQUEDA / ELIMINACION DE ELEMENTO</h2>
+
+<br><br>
+
+<p>EL NUEVO ARRAYS ES EL SIGUIENTE...</p>
+
+<script>
+    //
+
+let num;//length
+
+let datos=new Array();
+
+//
+
+num=parseInt(prompt("Ingrese cantidad de elementos a guardar en arrays"));
+
+for (i=0;i<num;i++){
+
+//recorre arrays
+
+datos[i]=prompt("Ingrese dato nuevo al arrays.."+i);
+
+}
+
+//BUSQUEDA ARRAY
+
+let dator=prompt("ingrese dato a eliminar en arrays");
+
+let indice=datos.indexOf(dator.trim());
+
+//APLICAR METODO SPLICE
+
+if (indice>-1){
+
+let index=datos.splice(indice,1);
+
+alert("DATO ELIMINADO EN ARRAYS..."+"\n"+"LISTA NUEVA..."+datos);
+
+}else{
+
+alert("ERROR..No se encontró Dato en array" );
+
+}
+
+document.write(datos+",");
+
+console.log(datos);
+
+</script>
+
+</center>
+
+</body>
+
+</html>
