@@ -1,0 +1,58 @@
+body{
+
+    background-color: rgb(110, 110, 212);
+    
+    }
+    
+    h1,h2{
+    
+    color:rgb(246, 185, 255);
+    
+    }
+    
+    form{
+    
+    border-style: solid;
+    
+    width: 60%;
+    
+    height: 300px;
+    
+    margin: auto;
+    
+    background-color: rgb(168, 238, 255);
+    
+    border-radius: 30px;
+    
+    }
+    
+    #boton{
+    
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+
+padding: 10px;
+
+}
+
+button{
+
+background-color: lightgray;
+
+border-radius: 30px;
+
+width:150px;
+
+height:100px;
+
+font-weight:bold;
+
+}
+
+p{
+
+font-size: 20px;
+
+}
