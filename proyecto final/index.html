@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiendita de ropa la yele</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="javascript:void(0)" class="logo"> <i class="fas fa-bread-slice"></i> tienda </a>
+
+        <nav class="navbar">
+            <a href="#home">inicio</a>
+            <a href="#about">sobre nosotros</a>
+            <a href="#product">productos</a>
+            
+            
+            
+            <a href="#order">ordenes</a>
+        </nav>
+        <div class="icons">
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- shopping cart -->
+
+    <div class="cart-items-container" name="carrito" id="carro">
+        <H2>Elementos seleccionados</H2>
+        <div id="close-form" class="fas fa-times"></div>       
+    </div>
+
+    <!-- shopping cart end-->
+
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                    <div class="content">
+                        <label>nuestra tienda es la mejor del mundo</label>
+                        <a href="javascript:void(0)" class="btn"> ¡vamos! </a>
+                    </div>
+                </div>
+                    <div class="content" style="margin-top:5%; margin-left: 10%">
+                        <h3>vestimos un mundo mejor</h3>                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- home section ends -->
+    <!-- banner -->
+    <!-- banner end-->
+    <!-- about us -->
+
+    <section class="about" id="about">
+        <h1 class="heading"> <span>sobre</span> nosotros </h1>
+        <div class="row" style="margin-top: -30px;">
+            <div class="image">
+                <img src="images/desktop-wallpaper-pin-de-m-s-en-michi-michi-peach-y-goma-en-2020-dibujos-kawaii-de-animales-dibujos-kawaii-tiernos-dibujos-kawaii-thumbnail.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>la felicidad <span>de vestirte  </span> como deseas</h3>                
+                <p>somos una marca 100% colombiaana que busca gente con deseos de vestise de forma unica como tu</p>
+                <a href="javascript:void(0)" class="btn btn-secondary">leer mas</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about us end-->
+
+    <!-- product -->
+
+    <section class="product" id="product">
+        <h1 class="heading">mas <span> productos</span></h1>
+        <div class="box-container">
+            <div class="box" id="1" name="vestido1">
+                <div class="image">
+                    <img src="images/61Ueg2vjoRL._AC_UF894,1000_QL80_.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>vestido nana</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$45.000</span>
+                    <br>
+                    <a href="javascript:void(0)" type="button" class="btn btn-light"
+                    onclick="addToCart(1, 'Vestido Nana', '$45.000')">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box" id="2">
+                <div class="image">
+                    <img src="images/descarga.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>vestido mari</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$70.000</span>
+                    <br>
+                    <a href="javascript:void(0)" type="button" class="btn btn-light"
+                    onclick="addToCart(2, 'Vestido Mari', '$70.000')">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box" id="3">
+                <div class="image">
+                    <img src="images/71KSlAmLJUL._SL1500_-300x300.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>vestido lulu</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">$102.000</span>
+                    <br>
+                    <a href="javascript:void(0)" type="button" class="btn btn-light"
+                    onclick="addToCart(3, 'Vestido Lulu', '$102.000')">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box" id="4">
+                <div class="image">
+                    <img src="images/Vestido-verde-Kawaii-Vintage-para-mujer-ropa-de-calle-bonita-con-lazo-gasa-con-manga-abombada.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>vestido laura</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$65.000</span>
+                    <br>
+                    <a href="javascript:void(0)" type="button" class="btn btn-light"
+                    onclick="addToCart(4, 'Vestido Laura', '$65.000')">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box" id="5">
+                <div class="image">
+                    <img src="images/48c0c80aab4df4093082e222bb85307e.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>vestido alek</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">$270.000</span>
+                    <br>
+                    <a href="javascript:void(0)" type="button" class="btn btn-light"
+                    onclick="addToCart(5, 'Vestido Alek', '$27.000')">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box" id="6">
+                <div class="image">
+                    <img src="efcb89008f822b01001a86fad03aa50c.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>vestido kitty</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$250.000</span>
+                    <br>
+                    <a href="javascript:void(0)" type="button" class="btn btn-light"
+                    onclick="addToCart(6, 'Vestido Nana', '$45.000')">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- product end-->
+
+
+    <!-- gallery -->
+
+   
+
+    <!-- gallery end -->
+
+    <!-- weekly promotions -->
+
+    <section class="promotion">
+
+        <h1 class="heading">promociones <span>de la semana</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="content">
+                    <h3>vestido momo</h3>                   
+                </div>
+                <img src="images/578fb741-5579-4db3-b37b-f37b98560adc.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/Vestido-de-chica-japonesa-suave-Kawaii-dulce-Lazo-mangas-voladoras-Lolita-tirantes-rosa-sin-mangas-Midi.jpg" alt="">
+                <div class="content">
+                    <h3>vestido rosita</h3>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- weekly promotions ends -->
+
+    <!-- team -->
+
+    <!-- order -->
+
+    <section class="order" id="order">
+        <h1 class="heading"><span>ordena</span> ahora </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/order.gif" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="nombre">
+                    <input type="text" placeholder="apellido">
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" placeholder="correo">
+                    <input type="number" placeholder="numero">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="nombre de pila">
+                    <input type="number" placeholder="desos">
+                </div>
+
+                <textarea placeholder="direccion" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Ordenar ahora" class="btn btn-xl btn-primary">
+            </form>
+        </div>
+    </section>
+
+    <!-- order end -->
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>direccion</h3>
+                <p>barrios unidos, chapinero, usaquen</p>
+                <div class="share">
+                    <a href="javascript:void(0)" target="_blank" class="fab fa-facebook-f"></a>
+                    <a href="javascript:void(0)" target="_blank" class="fab fa-twitter"></a>
+                    <a href="javascript:void(0)" target="_blank" class="fab fa-instagram"></a>
+                    <a href="javascript:void(0)" target="_blank" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>E-mail</h3>
+                <a href="javascript:void(0)" class="link">ropitalayele.com</a>                
+            </div>
+            <div class="box">
+                <h3>Nuestro Teléfono</h3>
+                <p>+57 3015139213</p>              
+            </div>
+            <div class="box">
+                <h3> horario de atencion</h3>
+                <p>lunes - sabado: 9:00 - 11:00 <br> domingo: 8:00 - 24:00 </p>
+            </div>
+        </div>
+    </section>
+    <!-- footer ends -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+
+
+</body>
+</html>
